@@ -24,3 +24,5 @@ cp .env.example .env
 docker compose up -d
 3. Відкрийте у браузері:
 http://localhost:8080
+
+# Як тестувати
