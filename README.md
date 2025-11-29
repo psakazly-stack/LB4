@@ -39,3 +39,29 @@ http://localhost:8080
 Клієнти      +        +       -         +          +
 Автомобілі   +        +       -         +          +
 Продажі      +        +       -         +          +
+
+# Безпека доступу до БД:
+Використовується тільки PDO з підготовленими запитами;
+Параметри з'єднання винесено в .env;
+Підключення реалізовано в окремому модулі db.php.
+
+# Docker-оточення
+Запуск: docker compose up -d
+Сервіси:
+  mysql_lab4 - база даних
+  php_lab4 - PHP з pdo_mysql
+  nginx_lab4 - веб-сервер
+Конфігурація: .env, .env.example
+SQL-дамп: init.sql - для стартових даних
+
+# Логування
+PHP: error_reporting(E_ALL) активовано
+Docker:
+docker logs php_lab4
+docker logs nginx_lab4
+docker logs mysql_lab4
+
+# Тег/реліз
+Після завершення - створити тег:
+git tag v1.0.0
+git push origin v1.0.0
