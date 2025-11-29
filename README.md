@@ -6,14 +6,14 @@
 Застосунок побудовано на PHP з використанням PDO, Docker, та розділенням на `public/` і `src/`.
 
 # Структура проекту
-db-lab/
-app/
-public/ - Публічні сторінки (customers.php, cars.php, sales.php)
-src/ - DAO-класи
-.env - Конфігурація БД
-Dockerfile - PHP з pdo_mysql
-docker-compose.yml - MySQL, PHP, Nginx
-.env.example - Шаблон конфігурації
+db-lab/;
+app/;
+public/ - Публічні сторінки (customers.php, cars.php, sales.php);
+src/ - DAO-класи;
+.env - Конфігурація БД;
+Dockerfile - PHP з pdo_mysql;
+docker-compose.yml - MySQL, PHP, Nginx;
+.env.example - Шаблон конфігурації;
 README.md - Цей файл
 
 # Інструкція запуску
